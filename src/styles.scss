@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("./css/clash-grotesk.css");
+
+.heading1 {
+  color: blue;
+  font-size: 2em;
+}
+
+.bigger-heading {
+  font-size: 6em;
+  color: black;
+  font-family: ClashGrotesk-Semibold;
+}
+
+.big-heading {
+  font-size: 3em;
+  color: black;
+  font-family: ClashGrotesk-Medium;
+}
+
+.medium-heading {
+  font-size: 1.7em;
+  color: black;
+  font-family: ClashGrotesk-Medium;
+}
+
+.bottom-border {
+  border-bottom: 2px solid black;
+}
+
+.right-border {
+  border-right: 2px solid black;
+}
+
+// Heights and Widths
+.h-30 {
+  min-height: 30vh;
+}
+
+.h-20 {
+  min-height: 20vh;
+}
+
+.h-50 {
+  min-height: 50vh;
+}
+
+.h-55 {
+  min-height: 55vh;
+}
+
+.h-50p {
+  min-height: 50%;
+}
+
+.h-100p {
+  min-height: 100%;
+}
+
+// Give body and p no styling
+body,
+p,
+.grid,
+.col-12,
+.col-6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  .big-heading {
+    font-size: 3em;
+  }
+}

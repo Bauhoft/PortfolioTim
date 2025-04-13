@@ -1,0 +1,9 @@
+{
+  "homepage": {
+    "titleRightSide": "I'm a Fullstack Developer creating beautiful designed websites, with a fast Backend.",
+    "techStack": {
+      "frontend": "Angular",
+      "backend": "Fastapi"
+    }
+  }
+}
