@@ -1,8 +1,16 @@
 <div class="grid nested-grid h-30">
   <div
     class="col-6 p-5 bottom-border right-border align-items-center align-content-center"
+    (mouseenter)="setCursorVisible(true)"
+    (mouseleave)="setCursorVisible(false)"
   >
-    <p class="bigger-heading flex justify-content-center">TIMBAUHF</p>
+    <p
+      class="bigger-heading flex justify-content-center"
+      (mouseenter)="setCursorActive(true)"
+      (mouseleave)="setCursorActive(false)"
+    >
+      TIMBAUHF
+    </p>
   </div>
   <div class="col-6 bottom-border">
     <div class="grid nested grid h-100p">
@@ -10,7 +18,7 @@
         <div class="grid">
           <div class="col-2">Projects</div>
           <div class="col-2">Experience</div>
-          <div class="col-2">Contacttt</div>
+          <div class="col-2">Contact</div>
         </div>
       </div>
       <div class="col-12 h-50p flex align-items-end p-3">
@@ -21,19 +29,12 @@
     </div>
   </div>
 </div>
-<div class="grid nested-grid h-55">
-  <div class="col-11 bottom-border right-border"></div>
-  <div class="col-1 bottom-border">
-    <div
-      class="pt-3 pb-3 align-items-center align-content-center paperplane-cursor"
-    >
-      <p class="big-heading flex justify-content-center">C</p>
-      <p class="big-heading flex justify-content-center">O</p>
-      <p class="big-heading flex justify-content-center">N</p>
-      <p class="big-heading flex justify-content-center">T</p>
-      <p class="big-heading flex justify-content-center">A</p>
-      <p class="big-heading flex justify-content-center">C</p>
-      <p class="big-heading flex justify-content-center">T</p>
-    </div>
-  </div>
+<app-projects data-scroll></app-projects>
+<div data-scroll class="grid nested-grid h-100">
+  <div class="col-11 bottom-border right-border pl-5 pt-5"></div>
 </div>
+<app-footer></app-footer>
+<app-blurry-cursor
+  [isVisible]="isCursorVisible"
+  [isActive]="isCursorActive"
+></app-blurry-cursor>

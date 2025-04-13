@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("./css/clash-grotesk.css");
+@import "lenis/dist/lenis.css";
 
 .heading1 {
   color: blue;
@@ -49,6 +50,10 @@
   min-height: 55vh;
 }
 
+.h-100 {
+  min-height: 100vh;
+}
+
 .h-50p {
   min-height: 50%;
 }
@@ -69,6 +74,7 @@ p,
 
 body {
   background-color: #f0f0f0;
+  // cursor: none;
 }
 
 @media screen and (max-width: 600px) {

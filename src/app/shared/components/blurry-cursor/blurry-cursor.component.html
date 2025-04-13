@@ -1,0 +1,17 @@
+<div class="cursor-container">
+  <div
+    *ngFor="let circle of cursorCircles; let i = index"
+    #circle
+    class="cursor-circle"
+    [ngStyle]="{
+      'background-color': colors[i],
+      'width.px': size,
+      'height.px': size,
+      'border-radius': '50%',
+      filter: 'blur(' + blurAmount + 'px)',
+      opacity: opacity,
+      transition:
+        'height 0.3s ease-out, width 0.3s ease-out, filter 0.3s ease-out, opacity 0.3s ease-out'
+    }"
+  ></div>
+</div>
