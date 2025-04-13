@@ -1,3 +1,8 @@
+# Deploy to Firebase
+To deploy the latest version to Firebase, use the following two commands:
+- npm run build
+- firebase deploy --only=hosting --project=portfolio-9dd28
+
 # Portfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
