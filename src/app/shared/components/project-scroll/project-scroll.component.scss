@@ -1,0 +1,12 @@
+.container {
+  display: flex; /* Align children horizontally */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%; /* Ensure container spans full width */
+  height: 100vh; /* Full viewport height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.panel {
+  flex: 0 0 100%; /* Each panel takes 100% of the viewport width */
+  height: 100vh; /* Full viewport height */
+}

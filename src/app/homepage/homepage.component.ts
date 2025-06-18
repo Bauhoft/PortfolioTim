@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { homepage } from '../../assets/text.json';
-import { ProjectsComponent } from '../shared/components/projects/projects.component';
-import { FooterComponent } from '../shared/components/footer/footer.component';
 import { BlurryCursorComponent } from '../shared/components/blurry-cursor/blurry-cursor.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
+import { ProjectScrollComponent } from '../shared/components/project-scroll/project-scroll.component';
 
 @Component({
   selector: 'app-homepage',
-  imports: [ProjectsComponent, FooterComponent, BlurryCursorComponent],
+  imports: [FooterComponent, BlurryCursorComponent, ProjectScrollComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss',
 })

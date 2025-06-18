@@ -29,10 +29,16 @@
     </div>
   </div>
 </div>
-<app-projects data-scroll></app-projects>
-<div data-scroll class="grid nested-grid h-100">
-  <div class="col-11 bottom-border right-border pl-5 pt-5"></div>
+<!-- <app-projects></app-projects> -->
+<div class="h-75 p-75 m-75 project full-border border-radius">
+  <div class="img full-height">
+    <img class="border-radius full-height" src="/project1.jpg" alt="" />
+  </div>
 </div>
+<app-project-scroll></app-project-scroll>
+<!-- <div data-scroll class="grid nested-grid h-100">
+  <div class="col-11 bottom-border right-border pl-5 pt-5"></div>
+</div> -->
 <app-footer></app-footer>
 <app-blurry-cursor
   [isVisible]="isCursorVisible"

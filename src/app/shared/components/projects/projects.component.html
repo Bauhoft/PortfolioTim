@@ -2,23 +2,16 @@
   <div class="col bottom-border pl-5 pt-5">
     <p class="bigger-heading">Projects</p>
   </div>
-  <div class="grid">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
-    <div class="col-6"></div>
-    <div class="col-6"></div>
+
+  <div class="container">
+    <div class="sticky">
+      @for(picture of pictures; track $index){
+      <div class="el" #imageElement>
+        <div class="imageContainer">
+          <img [src]="picture.src" alt="Project image" />
+        </div>
+      </div>
+      }
+    </div>
   </div>
 </div>
-<!-- <div class="col-1 bottom-border">
-    <div
-      class="pt-3 pb-3 align-items-center align-content-center paperplane-cursor"
-    >
-      <p class="big-heading flex justify-content-center">C</p>
-      <p class="big-heading flex justify-content-center">O</p>
-      <p class="big-heading flex justify-content-center">N</p>
-      <p class="big-heading flex justify-content-center">T</p>
-      <p class="big-heading flex justify-content-center">A</p>
-      <p class="big-heading flex justify-content-center">C</p>
-      <p class="big-heading flex justify-content-center">T</p>
-    </div>
-  </div> -->

@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
       autoRaf: true,
     });
     lenis.on('scroll', (e) => {
-      console.log(e);
+      // console.log(e);
     });
   }
 }
