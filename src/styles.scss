@@ -25,6 +25,12 @@
   font-family: ClashGrotesk-Medium;
 }
 
+.small-heading {
+  font-size: 1.2em;
+  color: black;
+  font-family: ClashGrotesk-Medium;
+}
+
 .bottom-border {
   border-bottom: 2px solid black;
 }
@@ -103,6 +109,21 @@ div:hover {
 @media screen and (max-width: 600px) {
   .big-heading {
     font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .bigger-heading {
+    font-size: 2em;
+  }
+  .big-heading {
+    font-size: 1.2em;
+  }
+  .medium-heading {
+    font-size: 0.95em;
+  }
+  .small-heading {
+    font-size: 0.95em;
   }
 }
 

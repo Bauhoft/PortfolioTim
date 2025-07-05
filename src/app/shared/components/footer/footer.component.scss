@@ -1,6 +1,6 @@
 .footer-container {
   position: relative;
-  height: 800px;
+  height: 300px;
   width: 100%;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
@@ -25,7 +25,6 @@
   color: white;
 }
 
-// Rest des Codes bleibt gleich
 .nav-container {
   display: flex;
   flex-shrink: 0;
@@ -47,16 +46,17 @@
 
 .section-2 {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 2rem;
 }
 
 .large-title {
-  font-size: 14vw;
-  line-height: 0.8;
-  margin-top: 2.5rem;
+  font-size: 12vw;
+  // line-height: 0.8;
+  // margin-top: 2.5rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -68,4 +68,37 @@ p {
 
 p:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    height: auto;
+    min-height: 120px;
+    padding: 0;
+  }
+  .footer {
+    position: relative;
+    height: auto;
+    min-height: 120px;
+    padding: 0;
+  }
+  .content-container {
+    padding: 1rem 0.5rem;
+  }
+  .large-title {
+    font-size: 2.5rem;
+    word-break: break-word;
+    text-align: center;
+  }
+  .section-2 {
+    margin-top: 1rem;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .nav-column {
+    align-items: center;
+  }
 }
