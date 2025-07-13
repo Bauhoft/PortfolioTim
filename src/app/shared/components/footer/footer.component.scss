@@ -1,6 +1,6 @@
 .footer-container {
   position: relative;
-  height: 300px;
+  height: 100vh;
   width: 100%;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
@@ -71,34 +71,22 @@ p:hover {
 }
 
 @media (max-width: 768px) {
-  .footer-container {
-    height: auto;
-    min-height: 120px;
-    padding: 0;
-  }
-  .footer {
-    position: relative;
-    height: auto;
-    min-height: 120px;
-    padding: 0;
-  }
   .content-container {
-    padding: 1rem 0.5rem;
-  }
-  .large-title {
-    font-size: 2.5rem;
-    word-break: break-word;
-    text-align: center;
-  }
-  .section-2 {
-    margin-top: 1rem;
-  }
-  .nav-container {
+    padding: 0;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
     align-items: center;
   }
-  .nav-column {
+
+  .section-2 {
+    margin-top: 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }

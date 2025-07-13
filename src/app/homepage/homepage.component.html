@@ -1,38 +1,41 @@
-<div class="grid nested-grid h-30">
-  <div
-    class="col-6 p-5 bottom-border right-border align-items-center align-content-center"
-    (mouseenter)="setCursorVisible(true)"
-    (mouseleave)="setCursorVisible(false)"
-  >
-    <p
-      class="bigger-heading flex justify-content-center"
-      (mouseenter)="setCursorActive(true)"
-      (mouseleave)="setCursorActive(false)"
+<div class="main-content">
+
+  <div class="grid nested-grid h-30">
+    <div
+      class="col-6 p-5 bottom-border right-border align-items-center align-content-center"
+      (mouseenter)="setCursorVisible(true)"
+      (mouseleave)="setCursorVisible(false)"
     >
-      TIMBAUHF
-    </p>
-  </div>
-  <div class="col-6 bottom-border">
-    <div class="grid nested grid h-100p">
-      <div class="col-12 h-50p bottom-border p-3">
-        <div class="grid">
-          <p class="col-2 small-heading">Projects</p>
-          <p class="col-2 small-heading">Experience</p>
-          <p class="col-2 small-heading contact">Contact</p>
+      <p
+        class="bigger-heading flex justify-content-center"
+        (mouseenter)="setCursorActive(true)"
+        (mouseleave)="setCursorActive(false)"
+      >
+        TIMBAUHF
+      </p>
+    </div>
+    <div class="col-6 bottom-border">
+      <div class="grid nested grid h-100p">
+        <div class="col-12 h-50p bottom-border p-3">
+          <div class="grid">
+            <p class="col-2 small-heading">Projects</p>
+            <p class="col-2 small-heading">Experience</p>
+            <p class="col-2 small-heading contact">Contact</p>
+          </div>
         </div>
-      </div>
-      <div class="col-12 title-right-side">
-        <p class="medium-heading ">
-          {{ text.titleRightSide }}
-        </p>
+        <div class="col-12 title-right-side">
+          <p class="medium-heading ">
+            {{ text.titleRightSide }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="work h-50 p-75 m-75 project full-border border-radius">
-    <p class="big-heading pb-5">Currently working &#64; BASF Digital Solutions GmbH</p>
-    <p class="big-heading">Open for side projects</p>
+  
+  <div class="work h-50 p-75 m-75 project full-border border-radius">
+      <p class="big-heading pb-5">Currently working &#64; BASF Digital Solutions GmbH</p>
+      <p class="big-heading">Open for side projects</p>
+  </div>
 </div>
 
 <!-- <app-project-scroll></app-project-scroll> -->
